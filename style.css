@@ -1,0 +1,11 @@
+body {
+    background-color: PaleGoldenrod;
+}
+
+h2 {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-right: solid black 5px;
+    float: left;
+}
