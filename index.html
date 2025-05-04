@@ -1,75 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анимированные кнопки</title>
-    <link rel="stylesheet" href="style.css">
+    <title>База животных</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="button-container">
-        <!-- Кнопки -->
-        <button class="animated-button" data-target="content1">Кнопка 1</button>
-        <button class="animated-button" data-target="content2">Кнопка 2</button>
-        <button class="animated-button" data-target="content3">Кнопка 3</button>
-        <button class="animated-button" data-target="content4">Кнопка 4</button>
-        <button class="animated-button" data-target="content5">Кнопка 5</button>
-        <button class="animated-button" data-target="content6">Кнопка 6</button>
-        <button class="animated-button" data-target="content7">Кнопка 7</button>
-        <button class="animated-button" data-target="content8">Кнопка 8</button>
-        <button class="animated-button" data-target="content9">Кнопка 9</button>
-        <button class="animated-button" data-target="content10">Кнопка 10</button>
-        <button class="animated-button" data-target="content11">Кнопка 11</button>
-        <button class="animated-button" data-target="content12">Кнопка 12</button>
+    <!-- Заголовок -->
+    <h2 class="title">База домашних животных</h2>
+
+    <!-- Контейнер для кнопок домашних животных -->
+    <div class="section">
+        <div class="button-container" id="pets-buttons">
+            <button class="animated-button" data-target="content1">Кошки</button>
+            <button class="animated-button" data-target="content2">Собаки</button>
+            <button class="animated-button" data-target="content3">Хомяки</button>
+            <button class="animated-button" data-target="content4">Попугаи</button>
+            <button class="animated-button" data-target="content5">Рыбки</button>
+            <button class="animated-button" data-target="content6">Морские свинки</button>
+            <button class="animated-button" data-target="content7">Черепахи</button>
+            <button class="animated-button" data-target="content8">Шиншиллы</button>
+            <button class="animated-button" data-target="content9">Лисы</button>
+            <button class="animated-button" data-target="content10">Еноты</button>
+            <button class="animated-button" data-target="content11">Кролики</button>
+            <button class="animated-button" data-target="content12">Панды</button>
+        </div>
+    </div>
+
+    <!-- Заголовок -->
+    <h2 class="title">Сельскохозяйственные животные</h2>
+
+    <!-- Контейнер для кнопок сельскохозяйственных животных -->
+    <div class="section">
+        <div class="button-container" id="farm-buttons">
+            <button class="animated-button" data-target="content13">Коровы</button>
+            <button class="animated-button" data-target="content14">Овцы</button>
+            <button class="animated-button" data-target="content15">Козы</button>
+            <button class="animated-button" data-target="content16">Свиньи</button>
+            <button class="animated-button" data-target="content17">Лошади</button>
+            <button class="animated-button" data-target="content18">Куры</button>
+            <button class="animated-button" data-target="content19">Утки</button>
+        </div>
     </div>
 
     <!-- Контейнеры для контента -->
     <div class="content" id="content1">
         <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 1.</p>
+        <p>Информация о кошках.</p>
     </div>
     <div class="content" id="content2">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 2.</p>
+        <img src="https://via.placeholder.com/150" alt="Собака">
+        <p>Информация о собаках.</p>
     </div>
     <div class="content" id="content3">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 3.</p>
+        <img src="https://via.placeholder.com/150" alt="Хомяк">
+        <p>Информация о хомяках.</p>
     </div>
     <div class="content" id="content4">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 4.</p>
+        <img src="https://via.placeholder.com/150" alt="Попугай">
+        <p>Информация о попугаях.</p>
     </div>
     <div class="content" id="content5">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 5.</p>
+        <img src="https://via.placeholder.com/150" alt="Рыбка">
+        <p>Информация о рыбках.</p>
     </div>
     <div class="content" id="content6">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 6.</p>
+        <img src="https://via.placeholder.com/150" alt="Морская свинка">
+        <p>Информация о морских свинках.</p>
     </div>
     <div class="content" id="content7">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 7.</p>
+        <img src="https://via.placeholder.com/150" alt="Черепаха">
+        <p>Информация о черепахах.</p>
     </div>
     <div class="content" id="content8">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 8.</p>
+        <img src="https://via.placeholder.com/150" alt="Шиншилла">
+        <p>Информация о шиншиллах.</p>
     </div>
     <div class="content" id="content9">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 9.</p>
+        <img src="https://via.placeholder.com/150" alt="Лиса">
+        <p>Информация о лисах.</p>
     </div>
     <div class="content" id="content10">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 10.</p>
+        <img src="https://via.placeholder.com/150" alt="Енот">
+        <p>Информация о енотах.</p>
     </div>
     <div class="content" id="content11">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 11.</p>
+        <img src="https://via.placeholder.com/150" alt="Кролик">
+        <p>Информация о кроликах.</p>
     </div>
     <div class="content" id="content12">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Текст для кнопки 12.</p>
+        <img src="https://via.placeholder.com/150" alt="Панда">
+        <p>Информация о пандах.</p>
+    </div>
+    <div class="content" id="content13">
+        <img src="https://via.placeholder.com/150" alt="Корова">
+        <p>Информация о коровах.</p>
+    </div>
+    <div class="content" id="content14">
+        <img src="https://via.placeholder.com/150" alt="Овца">
+        <p>Информация об овцах.</p>
+    </div>
+    <div class="content" id="content15">
+        <img src="https://via.placeholder.com/150" alt="Коза">
+        <p>Информация о козах.</p>
+    </div>
+    <div class="content" id="content16">
+        <img src="https://via.placeholder.com/150" alt="Свинья">
+        <p>Информация о свиньях.</p>
+    </div>
+    <div class="content" id="content17">
+        <img src="https://via.placeholder.com/150" alt="Лошадь">
+        <p>Информация о лошадях.</p>
+    </div>
+    <div class="content" id="content18">
+        <img src="https://via.placeholder.com/150" alt="Курица">
+        <p>Информация о курах.</p>
+    </div>
+    <div class="content" id="content19">
+        <img src="https://via.placeholder.com/150" alt="Утка">
+        <p>Информация об утках.</p>
     </div>
 
     <script>
@@ -97,6 +147,18 @@
                     content.style.display = 'flex'; // Показываем контент
                 }
             });
+        });
+
+        // Закрытие контента при клике вне области
+        document.addEventListener('click', (event) => {
+            const isButton = event.target.closest('.animated-button');
+            const isContent = event.target.closest('.content');
+
+            if (!isButton && !isContent) {
+                document.querySelectorAll('.content').forEach(content => {
+                    content.style.display = 'none';
+                });
+            }
         });
     </script>
 </body>
