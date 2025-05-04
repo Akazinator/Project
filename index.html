@@ -1,6 +1,103 @@
-<html>
-     <link rel="stylesheet" href="style.css">
-    <body>
-       <h2>База всех домашних животных</h2>
-    </body>
-</html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимированные кнопки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <!-- Кнопки -->
+        <button class="animated-button" data-target="content1">Кнопка 1</button>
+        <button class="animated-button" data-target="content2">Кнопка 2</button>
+        <button class="animated-button" data-target="content3">Кнопка 3</button>
+        <button class="animated-button" data-target="content4">Кнопка 4</button>
+        <button class="animated-button" data-target="content5">Кнопка 5</button>
+        <button class="animated-button" data-target="content6">Кнопка 6</button>
+        <button class="animated-button" data-target="content7">Кнопка 7</button>
+        <button class="animated-button" data-target="content8">Кнопка 8</button>
+        <button class="animated-button" data-target="content9">Кнопка 9</button>
+        <button class="animated-button" data-target="content10">Кнопка 10</button>
+        <button class="animated-button" data-target="content11">Кнопка 11</button>
+        <button class="animated-button" data-target="content12">Кнопка 12</button>
+    </div>
+
+    <!-- Контейнеры для контента -->
+    <div class="content" id="content1">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 1.</p>
+    </div>
+    <div class="content" id="content2">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 2.</p>
+    </div>
+    <div class="content" id="content3">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 3.</p>
+    </div>
+    <div class="content" id="content4">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 4.</p>
+    </div>
+    <div class="content" id="content5">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 5.</p>
+    </div>
+    <div class="content" id="content6">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 6.</p>
+    </div>
+    <div class="content" id="content7">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 7.</p>
+    </div>
+    <div class="content" id="content8">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 8.</p>
+    </div>
+    <div class="content" id="content9">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 9.</p>
+    </div>
+    <div class="content" id="content10">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 10.</p>
+    </div>
+    <div class="content" id="content11">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 11.</p>
+    </div>
+    <div class="content" id="content12">
+        <img src="https://via.placeholder.com/150" alt="Кошка">
+        <p>Текст для кнопки 12.</p>
+    </div>
+
+    <script>
+        // Находим все кнопки
+        const buttons = document.querySelectorAll('.animated-button');
+
+        // Добавляем обработчик событий для каждой кнопки
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Находим ID целевого контента из атрибута data-target
+                const targetId = button.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+
+                // Скрываем все остальные контейнеры
+                document.querySelectorAll('.content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.style.display = 'none';
+                    }
+                });
+
+                // Переключаем видимость текущего контента
+                if (content.style.display === 'flex') {
+                    content.style.display = 'none'; // Скрываем контент
+                } else {
+                    content.style.display = 'flex'; // Показываем контент
+                }
+            });
+        });
+    </script>
+</body>
+</html>
