@@ -2,26 +2,43 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
     display: flex;
-    justify-content: flex-start; /* Выравнивание по левому краю */
-    align-items: flex-start; /* Выравнивание по вертикали */
-    height: 100vh;
-    overflow-y: auto; /* Включаем прокрутку при необходимости */
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-/* Стили для контейнера кнопок */
+/* Заголовки */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: left;
+    width: 80%;
+    position: relative;
+    left: -10%; /* Сдвигаем заголовок чуть левее середины */
+}
+
+/* Разделы */
+.section {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Контейнер кнопок */
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Отступы между кнопками */
-    position: fixed; /* Фиксируем контейнер слева */
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    gap: 10px;
+    width: 200px;
 }
 
-/* Стили для кнопки */
+/* Кнопки */
 .animated-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -32,6 +49,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     transition: transform 0.2s ease, background-color 0.3s ease;
+    position: relative;
 }
 
 .animated-button::before {
@@ -54,29 +72,31 @@ body {
     transform: scale(0.95);
 }
 
-/* Стили для контента */
+/* Контент */
 .content {
-    display: none; /* Изначально скрыт */
-    position: absolute; /* Расположение справа от кнопки */
-    left: 150px; /* Отступ от кнопки */
-    top: 0; /* Выравнивание по высоте кнопки */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 400px;
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
     animation: fadeIn 0.5s ease-in-out;
+    z-index: 10;
 }
 
 /* Анимация появления контента */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateX(-20px);
+        transform: translateX(-20px) translateY(-50%);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0) translateY(-50%);
     }
 }
 
@@ -85,11 +105,23 @@ body {
     height: 150px;
     border-radius: 10px;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .content p {
     font-size: 18px;
-    color: #333;
     line-height: 1.6;
     text-align: left;
+}
+
+/* Улучшенный визуал */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e9ecef, #ffffff);
+    z-index: -1;
 }
