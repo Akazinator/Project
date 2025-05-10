@@ -22,12 +22,11 @@ body {
     left: -10%; /* Сдвигаем заголовок чуть левее середины */
 }
 
-/* Разделы */
 .section {
     margin-bottom: 40px;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Кнопки слева */
 }
 
 /* Контейнер кнопок */
