@@ -1,165 +1,185 @@
 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>База животных</title>
+    <title>База домашних животных</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Заголовок -->
+    <header class="site-header">
+        <div class="header-content">
+            <nav>
+                <a href="about.html" class="about-link">Об авторе</a>
+            </nav>
+        </div>
+    </header>
+
     <h2 class="title">База домашних животных</h2>
-
-    <!-- Раздел с кнопками домашних животных -->
-    <div class="section">
+    
+     <div class="section">
         <div class="button-container">
-            <button class="animated-button" data-target="content1">Кошки</button>
-            <button class="animated-button" data-target="content2">Собаки</button>
-            <button class="animated-button" data-target="content3">Хомяки</button>
-            <button class="animated-button" data-target="content4">Попугаи</button>
-            <button class="animated-button" data-target="content5">Рыбки</button>
-            <button class="animated-button" data-target="content6">Морские свинки</button>
-            <button class="animated-button" data-target="content7">Черепахи</button>
-            <button class="animated-button" data-target="content8">Шиншиллы</button>
-            <button class="animated-button" data-target="content9">Лисы</button>
-            <button class="animated-button" data-target="content10">Еноты</button>
-            <button class="animated-button" data-target="content11">Кролики</button>
-            <button class="animated-button" data-target="content12">Панды</button>
+            <!-- Кнопки для домашних животных -->
+            <label for="pet1" class="animated-button">Собака</label>
+            <input type="radio" name="pet" id="pet1">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet1').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Собака">
+                <p>Собака - домашнее животное, одно из наиболее популярных животных-компаньонов. Собаки известны своей преданностью и умением обучаться.</p>
+            </div>
+
+            <label for="pet2" class="animated-button">Кошка</label>
+            <input type="radio" name="pet" id="pet2">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet2').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Кошка">
+                <p>Кошка - домашнее животное, одно из самых популярных животных-компаньонов. Кошки независимы, но могут быть очень ласковыми.</p>
+            </div>
+
+            <label for="pet3" class="animated-button">Хомяк</label>
+            <input type="radio" name="pet" id="pet3">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet3').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Хомяк">
+                <p>Хомяк - небольшой грызун, популярное домашнее животное. Хомяки активны в вечернее и ночное время.</p>
+            </div>
+
+            <label for="pet4" class="animated-button">Попугай</label>
+            <input type="radio" name="pet" id="pet4">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet4').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Попугай">
+                <p>Попугай - яркая и умная птица, способная имитировать человеческую речь. Требует много внимания и ухода.</p>
+            </div>
+
+            <label for="pet5" class="animated-button">Черепаха</label>
+            <input type="radio" name="pet" id="pet5">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet5').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Черепаха">
+                <p>Черепаха - медлительное пресмыкающееся, которое может жить десятилетиями. Требует специальных условий содержания.</p>
+            </div>
+
+            <label for="pet6" class="animated-button">Рыбки</label>
+            <input type="radio" name="pet" id="pet6">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet6').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Рыбки">
+                <p>Аквариумные рыбки - популярные домашние питомцы, которые украшают дом и успокаивают нервную систему.</p>
+            </div>
+
+            <label for="pet7" class="animated-button">Кролик</label>
+            <input type="radio" name="pet" id="pet7">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet7').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Кролик">
+                <p>Кролик - милый и пушистый грызун, который может стать отличным домашним питомцем. Требует просторной клетки.</p>
+            </div>
+
+            <label for="pet8" class="animated-button">Морская свинка</label>
+            <input type="radio" name="pet" id="pet8">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet8').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Морская свинка">
+                <p>Морская свинка - добродушное и общительное животное, которое отлично подходит для детей.</p>
+            </div>
+
+            <label for="pet9" class="animated-button">Шиншилла</label>
+            <input type="radio" name="pet" id="pet9">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet9').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Шиншилла">
+                <p>Шиншилла - пушистый грызун с очень мягким мехом. Требует особых условий содержания и питания.</p>
+            </div>
+
+            <label for="pet10" class="animated-button">Канарейка</label>
+            <input type="radio" name="pet" id="pet10">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet10').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Канарейка">
+                <p>Канарейка - певчая птица с красивым голосом. Не требует сложного ухода, но нуждается в просторной клетке.</p>
+            </div>
+
+            <label for="pet11" class="animated-button">Хорёк</label>
+            <input type="radio" name="pet" id="pet11">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet11').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Хорёк">
+                <p>Хорёк - активное и любопытное животное, которое может стать отличным компаньоном для энергичных людей.</p>
+            </div>
+
+            <label for="pet12" class="animated-button">Змея</label>
+            <input type="radio" name="pet" id="pet12">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('pet12').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Змея">
+                <p>Змея - экзотический питомец, который требует специальных знаний по содержанию и кормлению.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Заголовок -->
     <h2 class="title">Сельскохозяйственные животные</h2>
-
-    <!-- Раздел с кнопками сельскохозяйственных животных -->
+    
     <div class="section">
         <div class="button-container">
-            <button class="animated-button" data-target="content13">Коровы</button>
-            <button class="animated-button" data-target="content14">Овцы</button>
-            <button class="animated-button" data-target="content15">Козы</button>
-            <button class="animated-button" data-target="content16">Свиньи</button>
-            <button class="animated-button" data-target="content17">Лошади</button>
-            <button class="animated-button" data-target="content18">Куры</button>
-            <button class="animated-button" data-target="content19">Утки</button>
+            <!-- Кнопки для сельскохозяйственных животных -->
+            <label for="farm1" class="animated-button">Корова</label>
+            <input type="radio" name="farm" id="farm1">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm1').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Корова">
+                <p>Корова - крупное сельскохозяйственное животное, разводимое для получения молока, мяса и кожи.</p>
+            </div>
+
+            <label for="farm2" class="animated-button">Курица</label>
+            <input type="radio" name="farm" id="farm2">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm2').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Курица">
+                <p>Курица - домашняя птица, разводимая для получения яиц и мяса. Одно из самых распространённых сельскохозяйственных животных.</p>
+            </div>
+
+            <label for="farm3" class="animated-button">Свинья</label>
+            <input type="radio" name="farm" id="farm3">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm3').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Свинья">
+                <p>Свинья - сельскохозяйственное животное, разводимое в основном для получения мяса (свинины).</p>
+            </div>
+
+            <label for="farm4" class="animated-button">Овца</label>
+            <input type="radio" name="farm" id="farm4">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm4').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Овца">
+                <p>Овца - домашнее животное, разводимое для получения шерсти, мяса и молока. Овцы также используются для выпаса травы.</p>
+            </div>
+
+            <label for="farm5" class="animated-button">Коза</label>
+            <input type="radio" name="farm" id="farm5">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm5').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Коза">
+                <p>Коза - выносливое животное, разводимое для получения молока, мяса и шерсти. Козье молоко считается полезным для здоровья.</p>
+            </div>
+
+            <label for="farm6" class="animated-button">Лошадь</label>
+            <input type="radio" name="farm" id="farm6">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm6').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Лошадь">
+                <p>Лошадь - крупное животное, используемое для верховой езды, перевозки грузов и в сельскохозяйственных работах.</p>
+            </div>
+
+            <label for="farm7" class="animated-button">Утка</label>
+            <input type="radio" name="farm" id="farm7">
+            <div class="content">
+                <button class="close-btn" onclick="document.getElementById('farm7').checked = false">×</button>
+                <img src="https://via.placeholder.com/150" alt="Утка">
+                <p>Утка - водоплавающая птица, разводимая для получения мяса, яиц и пуха. Утки также используются для борьбы с насекомыми.</p>
+            </div>
         </div>
     </div>
-
-    <!-- Контейнеры для контента -->
-    <div class="content" id="content1">
-        <img src="https://via.placeholder.com/150" alt="Кошка">
-        <p>Информация о кошках.</p>
-    </div>
-    <div class="content" id="content2">
-        <img src="https://via.placeholder.com/150" alt="Собака">
-        <p>Информация о собаках.</p>
-    </div>
-    <div class="content" id="content3">
-        <img src="https://via.placeholder.com/150" alt="Хомяк">
-        <p>Информация о хомяках.</p>
-    </div>
-    <div class="content" id="content4">
-        <img src="https://via.placeholder.com/150" alt="Попугай">
-        <p>Информация о попугаях.</p>
-    </div>
-    <div class="content" id="content5">
-        <img src="https://via.placeholder.com/150" alt="Рыбка">
-        <p>Информация о рыбках.</p>
-    </div>
-    <div class="content" id="content6">
-        <img src="https://via.placeholder.com/150" alt="Морская свинка">
-        <p>Информация о морских свинках.</p>
-    </div>
-    <div class="content" id="content7">
-        <img src="https://via.placeholder.com/150" alt="Черепаха">
-        <p>Информация о черепахах.</p>
-    </div>
-    <div class="content" id="content8">
-        <img src="https://via.placeholder.com/150" alt="Шиншилла">
-        <p>Информация о шиншиллах.</p>
-    </div>
-    <div class="content" id="content9">
-        <img src="https://via.placeholder.com/150" alt="Лиса">
-        <p>Информация о лисах.</p>
-    </div>
-    <div class="content" id="content10">
-        <img src="https://via.placeholder.com/150" alt="Енот">
-        <p>Информация о енотах.</p>
-    </div>
-    <div class="content" id="content11">
-        <img src="https://via.placeholder.com/150" alt="Кролик">
-        <p>Информация о кроликах.</p>
-    </div>
-    <div class="content" id="content12">
-        <img src="https://via.placeholder.com/150" alt="Панда">
-        <p>Информация о пандах.</p>
-    </div>
-    <div class="content" id="content13">
-        <img src="https://via.placeholder.com/150" alt="Корова">
-        <p>Информация о коровах.</p>
-    </div>
-    <div class="content" id="content14">
-        <img src="https://via.placeholder.com/150" alt="Овца">
-        <p>Информация об овцах.</p>
-    </div>
-    <div class="content" id="content15">
-        <img src="https://via.placeholder.com/150" alt="Коза">
-        <p>Информация о козах.</p>
-    </div>
-    <div class="content" id="content16">
-        <img src="https://via.placeholder.com/150" alt="Свинья">
-        <p>Информация о свиньях.</p>
-    </div>
-    <div class="content" id="content17">
-        <img src="https://via.placeholder.com/150" alt="Лошадь">
-        <p>Информация о лошадях.</p>
-    </div>
-    <div class="content" id="content18">
-        <img src="https://via.placeholder.com/150" alt="Курица">
-        <p>Информация о курах.</p>
-    </div>
-    <div class="content" id="content19">
-        <img src="https://via.placeholder.com/150" alt="Утка">
-        <p>Информация об утках.</p>
-    </div>
-
-    <script>
-        // Находим все кнопки
-        const buttons = document.querySelectorAll('.animated-button');
-
-        // Добавляем обработчик событий для каждой кнопки
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Находим ID целевого контента из атрибута data-target
-                const targetId = button.getAttribute('data-target');
-                const content = document.getElementById(targetId);
-
-                // Скрываем все остальные контейнеры
-                document.querySelectorAll('.content').forEach(otherContent => {
-                    if (otherContent !== content) {
-                        otherContent.style.display = 'none';
-                    }
-                });
-
-                // Переключаем видимость текущего контента
-                if (content.style.display === 'flex') {
-                    content.style.display = 'none'; // Скрываем контент
-                } else {
-                    content.style.display = 'flex'; // Показываем контент
-                }
-            });
-        });
-
-        // Закрытие контента при клике вне области
-        document.addEventListener('click', (event) => {
-            const isButton = event.target.closest('.animated-button');
-            const isContent = event.target.closest('.content');
-
-            if (!isButton && !isContent) {
-                document.querySelectorAll('.content').forEach(content => {
-                    content.style.display = 'none';
-                });
-            }
-        });
-    </script>
 </body>
 </html>
