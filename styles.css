@@ -1,16 +1,101 @@
-
 /* Общие стили */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+        .site-header {
+    width: 100%;
+    background: linear-gradient(135deg, #3a7d44 0%, #4CAF50 100%);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+        .header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        .site-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.about-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem; /* Увеличили размер шрифта */
+    padding: 10px 20px; /* Увеличили отступы */
+    border-radius: 30px; /* Закруглённые углы */
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.2); /* Фон вокруг надписи */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Лёгкая обводка */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Остальные стили (как в предыдущем коде) */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: left;
+    width: 80%;
+    position: relative;
+    left: -10%;
+}
+
+/* Стили для страницы "Об авторе" */
+.about-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.author-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #4CAF50;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
 
         /* Заголовки */
         .title {
