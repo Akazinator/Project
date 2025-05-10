@@ -24,17 +24,18 @@ body {
 
 .section {
     margin-bottom: 40px;
-    width: 100%;
+    width: 100%; /* Ширина секции */
     display: flex;
     justify-content: flex-start; /* Кнопки слева */
+    overflow: hidden; /* Скрываем лишнее содержимое */
 }
 
-/* Контейнер кнопок */
 .button-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 200px;
+    max-width: 200px; /* Максимальная ширина кнопок */
+    margin-left: 20px; /* Отступ слева */
 }
 
 /* Кнопки */
