@@ -126,8 +126,6 @@
 
         /* Кнопки */
         .animated-button {
-            padding: 10px 20px;
-            font-size: 16px;
             color: white;
             background-color: #4caf50;
             border: none;
@@ -137,6 +135,8 @@
             position: relative;
             transition: transform 0.2s ease, background-color 0.3s ease;
             text-align: left;
+            font-size: 18px; /* Было 16px */
+            padding: 12px 24px; /* Увеличиваем отступы */
         }
 
         .animated-button::before {
@@ -240,14 +240,14 @@
 .nav-button {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 20px;
     border-radius: 30px;
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 0 5px;
+     font-size: 1.2rem;
+    padding: 12px 25px; 
 }
 
 .nav-button:hover {
@@ -277,8 +277,8 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    padding: 12px 20px;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 14px 22px;
     color: white;
     background-color: #4caf50;
     border: none;
