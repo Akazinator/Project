@@ -167,3 +167,39 @@ body {
         height: 200px;
     }
 }
+
+/* Стили для фото и подписи */
+.ai-photo-container {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.ai-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.ai-photo:hover {
+    transform: scale(1.02);
+}
+
+.ai-caption {
+    font-style: italic;
+    color: #555;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .ai-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
