@@ -289,3 +289,36 @@
     z-index: 99;
 }
 
+/* Стили для фото и подписи */
+.ai-photo-wrapper {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.ai-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.ai-photo:hover {
+    transform: scale(1.03);
+}
+
+.ai-caption {
+    font-style: italic;
+    color: #555;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .ai-photo {
+        max-width: 250px;
+    }
+}
